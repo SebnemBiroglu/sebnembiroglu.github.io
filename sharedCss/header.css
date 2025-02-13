@@ -1,0 +1,89 @@
+/* Style the header with a background and some padding */
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #3e3e3e;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  position: relative;
+}
+
+/* Style the logo link */
+.header a.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+  
+/* Selected link with dot under it */
+.header a.selected::after {
+  content: "•";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.5em;
+  font-size: 1em;
+  color: #3e3e3e;
+}
+  
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 1.5rem; /* Use rem for font size */
+  cursor: pointer;
+}
+  
+/* Responsive design */
+@media screen and (max-width: 500px) {
+  .header-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    padding: 0.5rem;
+  }
+
+  /* Show the hamburger menu icon */
+  .hamburger {
+    display: block;
+  }
+
+  /* Show the menu links when the "show" class is added */
+  .header-right.show {
+    display: flex;
+  }
+
+  /* Adjust link styles for mobile */
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Adjust dot positioning for mobile */
+  .header a.selected::after {
+    left: 0.3em;
+    bottom: 0.7em;
+    transform: none;
+  }
+}
