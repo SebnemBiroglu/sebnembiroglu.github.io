@@ -1,6 +1,3 @@
-// Debugging: Log when the JavaScript file is loaded
-console.log("JavaScript file loaded!");
-
 // Function to toggle the mobile menu
 function toggleMenu() {
   console.log("Hamburger clicked!"); // Debugging: Log when the hamburger is clicked

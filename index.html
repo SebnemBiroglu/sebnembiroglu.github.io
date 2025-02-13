@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Your Website</title>
-        <link href="sebnemWebsite.css" rel="stylesheet" type="text/css">
+        <title>Home - Sebnem Portfolio</title>
+        <link href="sharedCss/global.css" rel="stylesheet" type="text/css">
+        <link href="sharedCss/header.css" rel="stylesheet" type="text/css">
+        <link href="sharedCss/footer.css" rel="stylesheet" type="text/css">
+        <link href="index.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
@@ -13,30 +16,29 @@
                 <div class="hamburger">☰</div>
                 <div class="header-right" id="headerRight">
                     <a href="index.html" class="selected">home</a>
-                    <a href="about.html">about</a>
-                    <a href="projects.html">projects</a>
-                    <a href="contact.html">contact</a>
+                    <a href="aboutPage/about.html">about</a>
+                    <a href="projectsPage/projects.html">projects</a>
+                    <a href="contactPage/contact.html">contact</a>
                 </div>
             </div>
         </header>
 
         <!-- Home Page Content -->
-        <section class="contact-section">
+        <section class="index-section">
             <div class="container">
                 <div class="hero-content">
                 <h1>hey!</h1>
                 <p>Your one-stop destination for amazing content and services.</p>
                 </div>
-                <img src="images/test1.png" alt="My Image">
+                <img src="assets/test1.png" alt="My Image">
             </div>
         </section>
-
-        <script src="sebnemWebsite.js"></script>
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-logo">Cb.</div>
                 <div class="footer-text">© 2025 Your Company. All rights reserved.</div>
             </div>
         </footer>
+        <script src="js/hamburgerMenu.js"></script>
     </body>
 </html>
