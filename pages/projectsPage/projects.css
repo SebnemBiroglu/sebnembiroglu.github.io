@@ -6,13 +6,6 @@
   padding: 2rem;
 }
 
-.project-box {
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .project-box h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -21,4 +14,22 @@
 .project-box p {
   font-size: 1rem;
   color: #666;
+}
+
+.project-box {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.project-box:hover {
+  background-color: #f5f5f5; /* Light hover effect */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow */
+  transform: translateY(-2px); /* Optional lift effect */
 }

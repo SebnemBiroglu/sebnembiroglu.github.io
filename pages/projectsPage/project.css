@@ -1,0 +1,259 @@
+
+/* blue Rectangle */
+.blue-rectangle {
+    width: 100%;
+    height: 400px;
+    background-color: #335268;
+    position: relative; /* Needed for absolute positioning of child */
+    overflow: hidden; /* Hide any image overflow */
+}
+/* Light blue Rectangle */
+.light-blue-rectangle {
+    width: auto;
+    padding: 40px;
+    background-color: #7793A7;
+}
+
+/* Process Container */
+.process-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding-bottom: 60px;
+}
+
+/* Process Title */
+.process-title {
+    text-align: center;
+    font-size: 1.5rem;
+    flex: 1;
+    margin: 0;
+}
+
+/* Process Description */
+.process-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    flex: 2;
+    text-align: left;
+    margin: 0;
+    padding-top: 40px; 
+}
+
+/* Project Container */
+.project-container {
+    background-color: white;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Project Title */
+.project-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Project Details */
+.project-details {
+    display: flex;
+    gap: 40px;
+}
+
+/* Project Overview */
+.project-overview {
+    flex: 2;
+    text-align: justify;
+}
+
+/* Project Role */
+.project-role {
+    flex: 1;
+}
+
+/* Headings */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+/* Process Buttons */
+.process-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.image-container {
+    position: absolute;
+    left: 20px; /* Left margin */
+    right: 20px; /* Right margin */
+    top: 20px; /* Top margin */
+    bottom: 20px; /* Bottom margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.process-button {
+    padding: 10px 20px;
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+.process-button:hover {
+    color: #7793A7; /* Light Blue color on hover */
+}
+
+/* Process Sections */
+.process-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.two-column-container {
+    display: flex;
+    gap: 40px; /* space between columns */
+}
+
+.problem-column, .solution-column {
+    flex: 1; /* makes columns equal width */
+}
+
+.process-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.process-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+}
+
+/* Process Sections */
+.emphathize-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.emphathize-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.emphathize-section h4 {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+/* Research Goals */
+.research-goals-container {
+    margin-top: 30px;
+    padding-left: 25%;
+    text-align: justify;
+}
+
+.research-goals-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.research-goals-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.research-goals-list li {
+    position: relative;
+    color: #333;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.research-goals-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #7793A7;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.goal-highlight {
+    font-weight: 600;
+    color: #335268;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .two-column-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.image-content-container {
+    max-width: 60%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.image-content-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-content-container p {
+    text-align: center;
+}
+
+/* New bordered light blue rectangle */
+.task-rectangle {
+    width: 100%;
+    padding: 20px;
+    background-color: #7793A7;
+    margin: 15px 0;
+}
+
+.task-rectangle.centered-items {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px; /* space between items */
+}
+
+.task-rectangle.centered-items div {
+    width: 100%;
+    max-width: 600px; /* optional: limit text width for better readability */
+}
