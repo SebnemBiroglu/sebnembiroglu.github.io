@@ -253,6 +253,13 @@ p {
     object-fit: cover; /* Ensures image covers area without stretching */
 }
 
+.solution-column img {
+    width: 100%; /* Ensures image fills its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: for rounded corners */
+    object-fit: cover; /* Ensures image covers area without stretching */
+}
+
 /* Responsive adjustment for smaller screens */
 @media (max-width: 768px) {
     .two-column-container {
