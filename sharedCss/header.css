@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 /* Style the header links */
@@ -41,6 +42,7 @@
   bottom: -0.5em;
   font-size: 1em;
   color: #3e3e3e;
+  z-index: 2;
 }
   
 /* Hamburger Menu Icon */
@@ -48,6 +50,7 @@
   display: none; /* Hidden by default */
   font-size: 1.5rem; /* Use rem for font size */
   cursor: pointer;
+  z-index: 2;
 }
   
 /* Responsive design */
@@ -66,11 +69,13 @@
   /* Show the hamburger menu icon */
   .hamburger {
     display: block;
+    z-index: 2;
   }
 
   /* Show the menu links when the "show" class is added */
   .header-right.show {
     display: flex;
+  z-index: 2;
   }
 
   /* Adjust link styles for mobile */

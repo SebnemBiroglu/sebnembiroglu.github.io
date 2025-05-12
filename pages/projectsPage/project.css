@@ -6,6 +6,7 @@
     background-color: #335268;
     position: relative; /* Needed for absolute positioning of child */
     overflow: hidden; /* Hide any image overflow */
+    z-index: 1;
 }
 /* Light blue Rectangle */
 .light-blue-rectangle {
@@ -21,6 +22,7 @@
     background-color: #8EAD80;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 /* Light green Rectangle */
 .light-green-rectangle {
