@@ -14,6 +14,22 @@
     background-color: #7793A7;
 }
 
+/* green Rectangle */
+.green-rectangle {
+    width: 100%;
+    height: 400px;
+    background-color: #8EAD80;
+    position: relative;
+    overflow: hidden;
+}
+/* Light green Rectangle */
+.light-green-rectangle {
+    width: auto;
+    padding: 40px;
+    background-color: #BED0B7;
+}
+
+
 /* Process Container */
 .process-container {
     max-width: 1200px;
@@ -106,12 +122,6 @@ p {
     align-items: center;
 }
 
-.image-container img {
-    width: 70%;
-    height: 70%;
-    object-fit: contain;
-}
-
 .process-button {
     padding: 10px 20px;
     color: #333; /* Dark text color */
@@ -121,8 +131,32 @@ p {
     transition: color 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .process-buttons {
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .process-buttons {
+        gap: 10px;
+    }
+    .process-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
 .process-button:hover {
     color: #7793A7; /* Light Blue color on hover */
+}
+
+.image-container img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
 }
 
 /* Process Sections */
@@ -212,6 +246,13 @@ p {
     color: #335268;
 }
 
+.problem-column img {
+    width: 100%; /* Ensures image fills its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: for rounded corners */
+    object-fit: cover; /* Ensures image covers area without stretching */
+}
+
 /* Responsive adjustment for smaller screens */
 @media (max-width: 768px) {
     .two-column-container {
@@ -221,18 +262,49 @@ p {
 }
 
 .image-content-container {
-    max-width: 60%;
+    max-width: 100%;
+    width: 60%;
     margin: 40px auto;
     padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .image-content-container img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .image-content-container p {
     text-align: center;
+}
+
+.image-content-container {
+    width: min(600px, 80%); /* Uses whichever is smaller */
+    margin: 40px auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .image-content-container {
+        width: 70%; /* Slightly wider on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-content-container {
+        width: 85%; /* Wider on small tablets */
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-content-container {
+        width: 95%; /* Nearly full width on phones */
+        margin: 20px auto;
+        padding: 0 10px;
+    }
 }
 
 /* New bordered light blue rectangle */
@@ -250,6 +322,8 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: auto;
+    padding: 40px;
     gap: 12px; /* space between items */
 }
 
