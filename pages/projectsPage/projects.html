@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projects - Sebnem Portfolio</title>
-        <link rel="icon" href="/assets/icon.jpeg">
-        <link href="/sharedCss/global.css" rel="stylesheet" type="text/css">
-        <link href="/sharedCss/header.css" rel="stylesheet" type="text/css">
-        <link href="/sharedCss/footer.css" rel="stylesheet" type="text/css">
-        <link href="projects.css" rel="stylesheet" type="text/css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sebnem Portfolio</title>
+    <link rel="icon" href="/assets/icon.jpeg">
+    <link href="/sharedCss/header.css" rel="stylesheet" type="text/css">
+    <link href="/sharedCss/footer.css" rel="stylesheet" type="text/css">
+    <link href="/sharedCss/global.css" rel="stylesheet" type="text/css">
+    <link href="projects.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="/index.html" class="logo">Cb.</a>
+            <div class="hamburger">☰</div>
+            <div class="header-right" id="headerRight">
+                <a href="/index.html">about</a>
+                <a href="/pages/projectsPage/projects.html" class="selected">projects</a>
+                <a href="/pages/contactPage/contact.html">contact</a>
+            </div>
+        </div>
+    </header>
 
-    <body>
-        <header>
-            <div class="header">
-                <a href="/index.html" class="logo">Cb.</a>
-                <div class="hamburger">☰</div>
-                <div class="header-right" id="headerRight">
-                    <a href="/index.html">about</a>
-                    <a href="/pages/projectsPage/projects.html" class="selected">projects</a>
-                    <a href="/pages/contactPage/contact.html">contact</a>
+    <main class="projects-container">
+        <h1 class="page-title">My Projects</h1>
+        
+        <div class="projects-grid">
+
+            <a href="docketChat.html" class="project-card">
+                <div class="project-image-container">
+                    <img src="/assets/docketChatHeader.png" alt="DocketChat" class="project-image">
+                    <div class="image-overlay"></div>
                 </div>
-            </div>
-        </header>
+                <h2 class="project-title">DocketChat</h2>
+                <p class="project-description">Legal support chat platform designed to make legal guidance more accessible</p>
+            </a>
 
-        <!-- Projects Page Content -->
-        <section class="projects-section">
-            <div class="project-box" onclick="window.location.href='docketChat.html'">
-                <h3>01/DocketChat</h3>
-                <p>Description for project 1</p>
+            <a href="dogoWalk.html" class="project-card">
+                <div class="project-image-container">
+                    <img src="/assets/dogowalk.png" alt="DogoWalk" class="project-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <h2 class="project-title">DogoWalk</h2>
+                <p class="project-description">Designed to build trust between dog owners and walkers</p>
+            </a>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/assets/wip.jpg" alt="Natural Hair Journey App" class="project-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <h2 class="project-title">Work In Progress</h2>
+                <p class="project-description">Coming Soon...</p>
             </div>
-            <div class="project-box" onclick="window.location.href='dogoWalk.html'">
-                <h3>02/DogoWalk</h3>
-                <p>Description for project 2</p>
+
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/assets/wip.jpg" alt="WhatsApp Message Scheduling" class="project-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <h2 class="project-title">Work In Progress</h2>
+                <p class="project-description">Coming Soon...</p>
             </div>
-        </section>
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-logo">Cb.</div>
-                <div class="footer-text">© 2025 Your Company. All rights reserved.</div>
-            </div>
-        </footer>
-        <script src="/js/hamburgerMenu.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-              document.body.classList.add('loaded');
-              console.log('DOM fully loaded and parsed'); // Optional logging
-            });
-          </script>
-    </body>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Cb.</div>
+            <div class="footer-text">© 2025 Sebnem Biroglu. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="/js/hamburgerMenu.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          document.body.classList.add('loaded');
+          console.log('DOM fully loaded and parsed'); // Optional logging
+        });
+      </script>
+</body>
 </html>

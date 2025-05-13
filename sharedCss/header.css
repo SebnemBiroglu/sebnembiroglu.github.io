@@ -1,3 +1,9 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999; /* Ensure it stays above content */
+  background-color: white; /* Needed for overlay effect */
+}
 /* Style the header with a background and some padding */
 .header {
   overflow: hidden;
