@@ -159,6 +159,7 @@ p {
     width: 70%;
     height: 70%;
     object-fit: contain;
+    pointer-events: none;
 }
 
 /* Process Sections */
@@ -339,4 +340,68 @@ p {
 .task-rectangle.centered-items div {
     width: 100%;
     max-width: 600px; /* optional: limit text width for better readability */
+}
+
+.light-green-rectangle {
+    position: relative;
+    padding-top: 60px;
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    width: auto;
+}
+
+.left-logo {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+/* If you want the logo to be clickable */
+.left-logo {
+    pointer-events: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1050px) {
+    .left-logo {
+      width: 70px;
+    }
+}
+
+@media (max-width: 800px) {
+    .left-logo {
+      width: 60px;
+    }
+}
+  
+@media (max-width: 800px) {
+    .light-green-rectangle {
+        padding: 70px 15px 30px;
+    }
+    
+    .right-logo {
+        width: 60px;
+    }
+    
+    .image-content-container img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+  
+@media (max-width: 480px) {
+    .light-green-rectangle {
+        padding: 60px 10px 20px;
+    }
+    
+    .left-logo {
+        width: 50px;
+        left: 10px;
+        top: 10px;
+    }
 }

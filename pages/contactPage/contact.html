@@ -16,8 +16,7 @@
                 <a href="/index.html" class="logo">Cb.</a>
                 <div class="hamburger">☰</div>
                 <div class="header-right" id="headerRight">
-                    <a href="/index.html">home</a>
-                    <a href="/pages/aboutPage/about.html">about</a>
+                    <a href="/index.html">about</a>
                     <a href="/pages/projectsPage/projects.html">projects</a>
                     <a href="/pages/contactPage/contact.html" class="selected">contact</a>
                 </div>
@@ -77,5 +76,11 @@
         <script src="/js/emailjs-config.js"></script>
         <script src="/js/form-handler.js"></script>
         <script src="/js/hamburgerMenu.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              document.body.classList.add('loaded');
+              console.log('DOM fully loaded and parsed'); // Optional logging
+            });
+          </script>
     </body>
 </html>

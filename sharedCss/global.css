@@ -7,3 +7,14 @@ html {
   -webkit-text-size-adjust: 100%; /* Prevent font scaling */
   -webkit-font-smoothing: antialiased; /* Better font rendering */
 }
+
+body {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body.loaded {
+  visibility: visible;
+  opacity: 1;
+}
